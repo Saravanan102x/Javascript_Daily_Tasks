@@ -18,10 +18,10 @@ Each folder contains one day's task or a specific topic.
 
 ## 🗓️ Daily Progress
 
-| Date       | Task                |
-|------------|---------------------|
-| 2025-07-17 | Simple Calculator   |
-| 2025-07-18 | DOM Event Handling  |
+| Date       | Task                    |
+|------------|-------------------------|
+| 2025-07-17 | Swapping of Two Numbers |
+
 
 ## 📷 Output
 
