@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Without using Temp variable</title>
+</head>
+<body>
+     <h2>Swapping of Two numbers without using temp variable</h2>
+     <div id="output"></div>
+     <script>
+        let a=10;
+        let b=20;
+        let result="Before Swapping: <br>"
+        result+="a="+a+"<br>";
+        result+="b="+b+"<br>";
+
+    //logic
+    a=a+b
+    b=a-b
+    a=a-b
+    result+="After Swapping: <br>"
+    result+="a="+a+"<br>"
+    result+="b="+b+"<br>"
+    document.getElementById("output").innerHTML=result;
+     </script>
+</body>
+</html>
