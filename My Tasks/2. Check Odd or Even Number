@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Odd or Even</title>
+</head>
+<body>
+  <h3>Check if a Number is Odd or Even</h3>
+  <p id="result"></p>
+
+  <script>
+    let number = 7;
+    let result = (number % 2 === 0) ? "The number is Even" : "The number is Odd";
+    document.getElementById("result").innerText = result;
+  </script>
+</body>
+</html>
