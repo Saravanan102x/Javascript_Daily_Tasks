@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nested If - Voting Eligibility</title>
+</head>
+<body>
+  <h3>Check Voting Eligibility using Nested If</h3>
+  <p id="result"></p>
+
+  <script>
+    let age = 65;
+    let result = "";
+
+    if (age >= 18) {
+      if (age <= 60) {
+        result = "Eligible to vote";
+      } else {
+        result = "Senior Citizen";
+      }
+    } else {
+      result = "Not Eligible to vote";
+    }
+
+    document.getElementById("result").innerText = result;
+  </script>
+</body>
+</html>
