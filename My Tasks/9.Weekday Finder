@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weekday Finder</title>
+</head>
+<body>
+
+  <h2>Enter a number (1 to 7) to get the weekday</h2>
+  <input type="number" id="dayNumber" min="1" max="7">
+  <button onclick="showWeekday()">Show Weekday</button>
+
+  <h3 id="result"></h3>
+
+  <script>
+    function showWeekday() {
+      var day = parseInt(document.getElementById("dayNumber").value);
+      var message = "";
+
+      switch(day) {
+        case 1:
+          message = "Sunday";
+          break;
+        case 2:
+          message = "Monday";
+          break;
+        case 3:
+          message = "Tuesday";
+          break;
+        case 4:
+          message = "Wednesday";
+          break;
+        case 5:
+          message = "Thursday";
+          break;
+        case 6:
+          message = "Friday";
+          break;
+        case 7:
+          message = "Saturday";
+          break;
+        default:
+          message = "Invalid number! Enter a number between 1 and 7.";
+      }
+
+      document.getElementById("result").innerText = message;
+    }
+  </script>
+
+</body>
+</html>
