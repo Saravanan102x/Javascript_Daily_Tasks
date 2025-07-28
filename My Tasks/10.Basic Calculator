@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Calculator</title>
+</head>
+<body>
+  <h2>Basic Calculator</h2>
+
+  <label>Enter First Number: </label>
+  <input type="number" id="num1"><br><br>
+
+  <label>Enter Second Number: </label>
+  <input type="number" id="num2"><br><br>
+
+  <button onclick="add()">Add</button>
+  <button onclick="subtract()">Subtract</button>
+  <button onclick="multiply()">Multiply</button>
+  <button onclick="divide()">Divide</button><br><br>
+
+  <label>Result: </label>
+  <input type="text" id="result" readonly>
+
+  <script>
+    function add() {
+      var a = parseFloat(document.getElementById("num1").value);
+      var b = parseFloat(document.getElementById("num2").value);
+      var sum = a + b;
+      document.getElementById("result").value = sum;
+    }
+
+    function subtract() {
+      var a = parseFloat(document.getElementById("num1").value);
+      var b = parseFloat(document.getElementById("num2").value);
+      var difference = a - b;
+      document.getElementById("result").value = difference;
+    }
+
+    function multiply() {
+      var a = parseFloat(document.getElementById("num1").value);
+      var b = parseFloat(document.getElementById("num2").value);
+      var product = a * b;
+      document.getElementById("result").value = product;
+    }
+
+    function divide() {
+      var a = parseFloat(document.getElementById("num1").value);
+      var b = parseFloat(document.getElementById("num2").value);
+      if (b === 0) {
+        document.getElementById("result").value = "Cannot divide by zero";
+      } else {
+        var division = a / b;
+        document.getElementById("result").value = division;
+      }
+    }
+  </script>
+</body>
+</html>
