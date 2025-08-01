@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make First Letter of the word capital</title>
+</head>
+<body>
+    <script>
+        let input="this is java";
+        let words=input.split(" ");
+
+        for(i=0;i<words.length;i++){
+            let word=words[i];
+            let first=word.substr(0,1).toUpperCase();
+            let rest=word.substr(1);
+            words[i]=first+rest;
+        }
+        let result=words.join(" ");
+        document.write(result)
+    </script>
+</body>
+</html>
