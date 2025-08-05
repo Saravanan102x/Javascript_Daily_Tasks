@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Subject Mark</title>
+</head>
+<body>
+    <h2>Student Result</h2>
+    <p id="output"></p>
+    <script>
+        var m1 = 58;
+        var m2 = 75;
+        var m3 = 85;
+        var m4 = 98;
+        var m5 = 77;
+
+        var total=m1+m2+m3+m4+m5;
+        var average=total/5;
+        var grade="";
+
+        if (m1 < 35 || m2 < 35 || m3 < 35 || m4 < 35 || m5 < 35) {
+            grade="F Grade";
+        } else {
+          if (average > 90) grade = "O Grade";
+          else if (average >= 75) grade = "A Grade";
+          else if (average >= 60) grade = "B Grade";
+          else if (average >= 50) grade = "C Grade";
+          else if (average >= 35) grade = "D Grade";
+            
+        }
+
+        document.getElementById("output").innerHTML="Total Marks: "+total+"<br>"+"Average: "+average.toFixed(2)+"<br>"+"Grade: "+ grade;
+
+    </script>
+</body>
+</html>
