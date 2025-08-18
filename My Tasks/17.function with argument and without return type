@@ -1,0 +1,8 @@
+//function with argument and without return type
+
+function add(a,b)
+{
+    var c=a+b;
+    console.log(c)
+}
+add(23,45)
