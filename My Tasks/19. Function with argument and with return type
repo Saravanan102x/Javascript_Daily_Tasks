@@ -1,0 +1,7 @@
+//function with argument and with return type
+
+function add(a,b)
+{
+    return a+b;
+}
+console.log((add(5,10)))
